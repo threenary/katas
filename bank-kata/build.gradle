@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'com.codurance.kata'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
+
+    testCompile 'org.assertj:assertj-core:3.9.1'
+    testCompile 'org.mockito:mockito-junit-jupiter:3.0.0'
+}
+
+test {
+    useJUnitPlatform()
+}
